@@ -1,0 +1,21 @@
+import{_ as a,o as n,c as i,ae as l}from"./chunks/framework.CGWemxwz.js";const o=JSON.parse('{"title":"消息聚合","description":"","frontmatter":{},"headers":[],"relativePath":"batching.md","filePath":"batching.md"}'),p={name:"batching.md"};function e(t,s,h,k,r,d){return n(),i("div",null,[...s[0]||(s[0]=[l(`<h1 id="消息聚合" tabindex="-1">消息聚合 <a class="header-anchor" href="#消息聚合" aria-label="Permalink to &quot;消息聚合&quot;">​</a></h1><p>短时间多条玩家进出消息合并成一条推送，减少刷屏。</p><h2 id="聚合规则" tabindex="-1">聚合规则 <a class="header-anchor" href="#聚合规则" aria-label="Permalink to &quot;聚合规则&quot;">​</a></h2><ul><li><strong>仅作用于玩家进出事件</strong></li><li>TX Admin / 心跳 / 定时公告<strong>不受聚合影响</strong>，始终实时推送</li></ul><h2 id="配置项" tabindex="-1">配置项 <a class="header-anchor" href="#配置项" aria-label="Permalink to &quot;配置项&quot;">​</a></h2><div class="language-lua vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang">lua</span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">Batching </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;"> {</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    Enable </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> true</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,            </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">-- 是否开启聚合</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    MaxMessages </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 10</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,         </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">-- 积压达到这个数量立即发送</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    FlushIntervalMs </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 600000</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">, </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">-- 等待多久后发送（毫秒），默认10分钟</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">    MaxBatchSize </span><span style="--shiki-light:#D73A49;--shiki-dark:#F97583;">=</span><span style="--shiki-light:#005CC5;--shiki-dark:#79B8FF;"> 50</span><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">,        </span><span style="--shiki-light:#6A737D;--shiki-dark:#6A737D;">-- 单次聚合最大条数</span></span>
+<span class="line"><span style="--shiki-light:#24292E;--shiki-dark:#E1E4E8;">}</span></span></code></pre></div><h2 id="聚合效果示例" tabindex="-1">聚合效果示例 <a class="header-anchor" href="#聚合效果示例" aria-label="Permalink to &quot;聚合效果示例&quot;">​</a></h2><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>📦 消息聚合报告</span></span>
+<span class="line"><span>━━━━━━━━━━━━━━━━━━━</span></span>
+<span class="line"><span>聚合数量：4 条</span></span>
+<span class="line"><span>时间跨度：8分钟</span></span>
+<span class="line"><span>渠道：napcat</span></span>
+<span class="line"><span>事件统计：</span></span>
+<span class="line"><span>  🟢 进入: 3 条</span></span>
+<span class="line"><span>  🔴 离开: 1 条</span></span>
+<span class="line"><span>━━━━━━━━━━━━━━━━━━━</span></span>
+<span class="line"><span>最新消息：</span></span>
+<span class="line"><span>🟢 玩家进入:</span></span>
+<span class="line"><span>  张三</span></span>
+<span class="line"><span>  李四</span></span>
+<span class="line"><span>  王五</span></span>
+<span class="line"><span>🔴 玩家离开:</span></span>
+<span class="line"><span>  赵六</span></span></code></pre></div><h2 id="建议" tabindex="-1">建议 <a class="header-anchor" href="#建议" aria-label="Permalink to &quot;建议&quot;">​</a></h2><ul><li>服务器人数多 → 调小 <code>FlushIntervalMs</code>（如 5 分钟）</li><li>服务器人数少 → 保持默认 10 分钟</li></ul>`,10)])])}const g=a(p,[["render",e]]);export{o as __pageData,g as default};
