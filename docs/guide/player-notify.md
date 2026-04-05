@@ -32,7 +32,7 @@ PlayerNotify = {
 
 玩家进出通知默认走消息聚合，短时间多条消息合并成一条推送，减少群内刷屏。
 
-详见 [消息聚合](./batching)
+详见 [消息聚合](/xf-push/guide/batching)
 
 ## 效果示例
 

@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  base: "/xf-push/",
   lang: 'zh-CN',
   title: 'xf-push',
   description: 'FiveM 多渠道消息推送插件',
