@@ -1,0 +1,13 @@
+{
+  "name": "xf-push-docs",
+  "version": "1.0.0",
+  "description": "xf-push / xf-pushplus FiveM 多渠道消息推送插件文档",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3"
+  }
+}
