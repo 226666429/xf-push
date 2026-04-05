@@ -1,0 +1,1 @@
+import{_ as i,o as a,c as n,ae as h}from"./chunks/framework.CGWemxwz.js";const g=JSON.parse('{"title":"基础配置","description":"","frontmatter":{},"headers":[],"relativePath":"config.md","filePath":"config.md"}'),k={name:"config.md"};function l(p,s,t,e,E,r){return a(),n("div",null,[...s[0]||(s[0]=[h("",6)])])}const y=i(k,[["render",l]]);export{g as __pageData,y as default};
