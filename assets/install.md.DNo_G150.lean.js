@@ -1,0 +1,1 @@
+import{_ as a,o as i,c as n,ae as l}from"./chunks/framework.CGWemxwz.js";const o=JSON.parse('{"title":"快速开始","description":"","frontmatter":{},"headers":[],"relativePath":"install.md","filePath":"install.md"}'),p={name:"install.md"};function e(t,s,h,k,r,d){return i(),n("div",null,[...s[0]||(s[0]=[l("",24)])])}const c=a(p,[["render",e]]);export{o as __pageData,c as default};
